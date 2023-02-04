@@ -1,0 +1,39 @@
+
+
+/*
+*
+* ==========================================
+* CUSTOM UTIL CLASSES
+* ==========================================
+*
+*/
+.home{
+    width: 100%;
+    
+}
+.profile-header {
+    transform: translateY(5rem);
+    border-radius:50%;
+}
+.circle{
+    border-radius:50%;
+}
+.dis .col-3{
+    
+    text-align: center;
+}
+
+
+/*
+*
+* ==========================================
+* FOR DEMO PURPOSE
+* ==========================================
+*
+*/
+/* body {
+    background: #654ea3;
+    background: -webkit-linear-gradient(to right, #654ea3, #eaafc8);
+    background: linear-gradient(to right, #654ea3, #eaafc8);
+    min-height: 100vh;
+} */
