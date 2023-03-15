@@ -60,7 +60,7 @@ const Upload = () =>{
         formdata.append("phone",phone);
         formdata.append("background",back);
         formdata.append("profile",profile);
-        Axios.post("http://143.198.205.127:4000/insertData",formdata).then(res=> {
+        Axios.post("http://localhost:4000/insertData",formdata).then(res=> {
             MySwal.fire({
                 title: <strong>Insert successfully!</strong>,
                 html: <i>Congratualation Admin!</i>,
@@ -72,7 +72,7 @@ const Upload = () =>{
     function Newcategory(evt){
         evt.preventDefault();
         //ready to submit new category to the server
-        Axios.post("http://143.198.205.127:4000/setNew",newcate).then((res)=>{
+        Axios.post("http://localhost:4000/setNew",newcate).then((res)=>{
             MySwal.fire({
                 title: <strong>Insert new category successfully!</strong>,
                 html: <i>Congratualation Admin!</i>,
@@ -302,12 +302,12 @@ const Upload = () =>{
                     <div className="col-sm">
                     <button className="btn btn-primary mt-3 ml-2" onClick={()=>{
                          if(Opt === "all"){
-                            Axios.delete('http://143.198.205.127:4000/delete').then(
+                            Axios.delete('http://localhost:4000/delete').then(
                                 (res) => alert(res)
                             ).catch((err)=> alert(err) )
                          }else{
                             if(Specific !== undefined){
-                                Axios.delete(`http://143.198.205.127:4000/deleteData/${Specific}`).then(
+                                Axios.delete(`http://localhost:4000/deleteData/${Specific}`).then(
                                     (res) => alert(res)
                                 ).catch((err)=> alert(err) )
                             }

@@ -20,7 +20,7 @@ const Login = () => {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-        Axios.post("http://143.198.205.127:4000/login",{
+        Axios.post("http://localhost:4000/login",{
             email:email,
             password:password,
         },{withCredentials : true}).then(res=> {

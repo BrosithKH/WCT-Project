@@ -51,7 +51,7 @@ const upload = async (e) => {
     formdata.append("profile",profile);
 
     
-    Axios.post("http://143.198.205.127:4000/editPost",formdata,{withCredentials : true}).then(res=> {
+    Axios.post("http://localhost:4000/editPost",formdata,{withCredentials : true}).then(res=> {
         MySwal.fire({
             title: <strong>Insert successfully!</strong>,
             html: <i>Congratualation Admin!</i>,

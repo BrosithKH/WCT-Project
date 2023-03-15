@@ -20,7 +20,7 @@ const Register = () => {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-        Axios.post("http://143.198.205.127:4000/signUp",{
+        Axios.post("http://localhost.127:4000/signUp",{
             specialist:specialist,
             email:email,
             password:password,

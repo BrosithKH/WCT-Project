@@ -28,7 +28,7 @@ const HomePage = (props) => {
    useEffect(()=> {
     
     // to get data the profile data 
-    Axios.get('http://143.198.205.127:4000/getProfile',{withCredentials:true}).then((res)=>{
+    Axios.get('http://localhost:4000/getProfile',{withCredentials:true}).then((res)=>{
     setsessionUser(res.data.data.email);  
     console.log("sss",res);
     }).catch(err =>console.log(err));

@@ -23,7 +23,7 @@ const Profile = () =>{
     const[Data, setData] = useState();
     const[DataPost, setDataPost] = useState();
     
-    const getData= async () => {const {data} = await Axios.get('http://143.198.205.127:4000/getEdit',{withCredentials:true});setData(await data)};
+    const getData= async () => {const {data} = await Axios.get('http://localhost:4000/getEdit',{withCredentials:true});setData(await data)};
     
     useEffect(()=>{
       getData();  
